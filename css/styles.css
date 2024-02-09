@@ -1,0 +1,110 @@
+:root {
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #121212;
+  --yellow: #f4d04e;
+
+  --main-font: "Inter", sans-serif;
+  --fs: 16px;
+
+  --fw-semibold: 600;
+  --fw-bold: 800;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--main-font);
+  font-size: var(--fs);
+  background-color: var(--yellow);
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/* --------------------------
+            CARD
+-----------------------------*/
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 20rem;
+  padding: 1em;
+  border: 1px solid var(--offBlack);
+  border-radius: 12px;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 6px 7px 0px 0px rgba(0, 0, 0);
+}
+
+.card-image {
+  border-radius: inherit;
+}
+
+.card-header > p:first-child {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: var(--fw-bold);
+  background-color: var(--yellow);
+}
+
+.card-header p:last-child {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  color: var(--grey);
+}
+
+.card-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: var(--fw-bold);
+}
+
+.card-footer img {
+  width: 40px;
+  height: 40px;
+}
+
+/* --------------------------
+            FOOTER
+-----------------------------*/
+
+.footer {
+  color: var(--black);
+}
+
+.footer a {
+  color: inherit;
+  font-weight: var(--fw-bold);
+}
